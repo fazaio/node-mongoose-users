@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server - Test Case Impstudio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node ./src/database/seeders.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fazaux",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-paginate": "^1.0.2",
+    "express-validator": "^6.14.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
