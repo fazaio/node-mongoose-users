@@ -19,6 +19,8 @@ Npm install & start server:
 ```
 npm i && npm run start
 ```
+or\
+``` node index.js ```
 
 ## Database
 To generate user (seeder) run : ```npm run seed 10```
