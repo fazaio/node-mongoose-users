@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const users = require("./src/router/users");
@@ -13,6 +14,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.raw());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(paginate.middleware(10, 50));
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 
 app.use("/auth", auth);
 app.use("/users", users); // user router
