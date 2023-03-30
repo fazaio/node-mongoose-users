@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(paginate.middleware(10, 50));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send(
+    "Visit: https://github.com/fazaio/node-mongoose-users <br> API Documentation"
+  );
 });
 
 app.use("/auth", auth);
